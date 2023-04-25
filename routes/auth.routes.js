@@ -41,7 +41,8 @@ router.post('/login', async (req, res, next) => {
         console.log(user)
         if (!!user){
             if (bcryptjs.compareSync(req.body.password, user.passwordHash)) {
-                res.send(user)
+                req.session.user = user
+                res.redirect('/profile')
             } else {
                 res.render('auth/login', {errorMessage: 'Password not correct'})
             }
