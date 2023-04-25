@@ -6,3 +6,23 @@ body {
 a {
   color: #00B7FF;
 }
+
+navbar {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  background-color: beige;
+}
+
+navbar a {
+  font-size: 1.3em;
+  margin: 10px;
+  border: solid 1px black;
+  padding: 3px;
+  color: blanchedalmond;
+  border-radius: 5px;
+  border-color: #00B7FF;
+  font-weight: 600;
+  background-color: #00B7FF;
+  text-decoration: none;
+}
